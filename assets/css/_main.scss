@@ -1,0 +1,899 @@
+
+@mixin shadow()
+{
+	box-shadow: 0px 45px 70px rgba(0,0,0,0.24);
+}
+
+
+		.h1_line,.h1_line_white{
+			position: relative;
+			display: inline-block;
+			top: 50%;
+			left:50%;
+			transform: translate(-50%,-50%);
+		}
+		.h1_line::after 
+		{ 
+		  content: " ";
+		  width: 100%;
+		  background-color: #AD9966;
+		  bottom: 0;
+		  left: 0;
+		  position: absolute;
+		  height: 0.08em;
+		}
+		.h1_line::before 
+		{
+			content: " ";
+		  width: 100%;
+		  background-color: #AD9966;
+		  bottom: -0.4em;
+		  left: 0;
+		  position: absolute;
+		  height: 0.2em;
+		}
+		.h1_line_white::after 
+		{ 
+		  content: " ";
+		  width: 100%;
+		  background-color: white;
+		  bottom: 0;
+		  left: 0;
+		  position: absolute;
+		  height: 0.08em;
+		}
+		.h1_line_white::before 
+		{
+			content: " ";
+		  width: 100%;
+		  background-color: white;
+		  bottom: -0.4em;
+		  left: 0;
+		  position: absolute;
+		  height: 0.2em;
+		}
+
+
+.p_gold_bold 
+{
+	color: #AD9966;
+	font-weight: bold;
+	font-size: 1em;
+}
+/* for shopping cart*/
+.shooping
+{
+	// background:#AD9966;
+	background: rgba(0, 0, 0, 0.6);
+	border-radius: 0.3em;
+	position: fixed;
+	top: 50%;
+	right: 0;
+	width: 4em;
+	height: 4em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+
+	i 
+	{
+		color: white;
+		font-size: 2.5em;
+	} 
+}
+/*for section3,and 6*/
+.index
+{
+	.section3,.section6
+	{
+		h1 
+		{
+			text-align: center;
+			color:#8B8B92;
+		}
+		/*for h1*/
+		h1
+		{
+			position: relative;
+			display: inline-block;
+			top: 50%;
+			left:50%;
+			transform: translate(-50%,-50%);
+		}
+		h1::after 
+		{ 
+		  content: " ";
+		  width: 100%;
+		  background-color: #AD9966;
+		  bottom: 0;
+		  left: 0;
+		  position: absolute;
+		  height: 0.08em;
+		}
+		h1::before 
+		{
+			content: " ";
+		  width: 100%;
+		  background-color: #AD9966;
+		  bottom: -0.4em;
+		  left: 0;
+		  position: absolute;
+		  height: 0.2em;
+		}
+	}
+}
+
+
+ /*for section 3 and 6*/
+.left
+{
+	border: 0.2em solid #AD9966;
+	@include shadow();
+	padding: 2.5em;
+	background-color: white;
+
+	h1 
+	{
+		@include color-gold();
+		font-weight: bold;
+		padding:0;
+	}
+	.gold
+	{
+		@include color-gold();
+		font-weight: bold;
+		/*font-size: 1.4em;*/
+		padding:0 0 1em 0;
+	}
+	
+}
+.right
+{
+	img 
+	{
+		display: block;
+		width: 100%;
+		@include shadow();
+
+	}
+}
+
+.flex
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 2.5em;
+}
+.left_flex
+{
+	flex:1 0 63%;
+}
+.right_flex
+{
+	flex:1 0 18%;
+	padding:0 0 0 2em;
+}
+
+/*for section section4*/
+.index
+{
+	.section4
+	{
+		background-image: url('../images/wine_img.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding-top: 36%;
+		min-height: 10em;
+		padding: 2em 0 4em;
+		background-attachment: fixed;
+		position: relative;
+		background-position: center;
+
+		.container 
+		{
+			margin: 0 2em;
+			.img 
+			{
+				text-align: center;
+				.wine_offer
+				{
+					margin: 0;
+					padding: 0;
+				}
+			}
+		}
+		
+	}
+}
+
+.index
+{
+	.description_offers 
+	{
+		
+		.day1,.day2,.day3 
+		{
+			margin-bottom: 0.5em;
+		}
+		.info
+		{
+			
+			background-color:rgba(173,153,102,1);
+			@include shadow();
+			padding: 1em 2.5em;
+			text-align: center;
+
+			h1 
+			{
+				@include color-white();
+				padding: 0.5em 0;
+			}
+			
+			.black_p
+			{
+				color: black;
+			}
+		}
+
+	}
+}
+
+.index
+{
+	.section4 
+	{
+		.container 
+		{
+			.description_offers
+			{
+				margin-top: 3em;
+			}
+		}
+	}
+	.img
+	{
+		/*flex: 1 0 40%;*/
+		/*margin: 1em 2em 1em 3em;*/
+		h1 
+		{
+			@include color-gold();
+		}
+		/*for h1*/
+		.line
+		{
+			margin-bottom: 2em;
+			h1
+			{
+				position: relative;
+				display: inline-block;
+				/*top: 50%;
+				left:50%;
+				transform: translate(-50%,-50%);*/
+				 &::after 
+				{ 
+				  content: " ";
+				  width: 100%;
+				  background-color: #ffffff;
+				  bottom: 0;
+				  left: 0;
+				  position: absolute;
+				  height: 0.08em;
+				}
+				&::before 
+				{
+					content: " ";
+				  width: 100%;
+				  background-color: #ffffff;
+				  bottom: -0.4em;
+				  left: 0;
+				  position: absolute;
+				  height: 0.2em;
+				}
+			}
+			
+		}
+			
+	}
+	.bold_p
+	{
+		@include color-white();
+		font-weight: bold;
+		/*font-size: 1em;*/
+		margin-bottom: 1.5em;
+	}
+	.flex_left
+	{
+		flex: 0 0 40%;
+	}
+	.flex_right
+	{
+		flex: 1 0 40%;
+	}
+	.button_p
+	{
+		margin: 3em 0em;
+	}
+
+	.section12
+	{
+		background-image: url('../images/reservation.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding-top: 39%;
+		min-height: 10em;
+		padding: 2em 0 4em;
+		/*// padding-top: 80%;*/
+		background-attachment: fixed;
+		position: relative;
+		background-position: center;
+		.container 
+		{
+			select 
+			{ 
+				height: 3em;
+			 }
+			
+		}
+	}
+}
+
+/*for section section7*/
+.index
+{
+	.section7
+	{
+		background-image: url('../images/about_img.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding-top: 40%;
+		min-height: 22em;
+		/* padding-top: 80%;*/
+		background-attachment: fixed;
+		position: relative;
+		/*background-position: center;*/
+		
+		.container 
+		{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			/* width: 70%;*/
+			transform: translate(-50%,-50%);
+			@include color-white();
+			text-align: center;
+			width: 100%;
+			padding: 0 2em;
+			box-sizing: border-box;
+			h2
+			{
+				padding: 1.2em 0;
+			}
+			h1
+			{
+				position: relative;
+				display: inline-block;
+				@include color-gold();
+				margin-top: 0;
+				padding-top: 0;
+				/*top: 50%;
+				left:50%;
+				transform: translate(-50%,-50%);*/
+				 &::after 
+				{ 
+				  content: " ";
+				  width: 100%;
+				  background-color: #ffffff;
+				  bottom: 0;
+				  left: 0;
+				  position: absolute;
+				  height: 0.08em;
+				}
+				&::before 
+				{
+					content: " ";
+				  width: 100%;
+				  background-color: #ffffff;
+				  bottom: -0.4em;
+				  left: 0;
+				  position: absolute;
+				  height: 0.2em;
+				}
+			}
+			.about_button 
+			{
+				padding-top: 2em;
+			}
+		}
+		
+	}
+
+	.section11 
+	{
+		.container 
+		{
+			text-align: center;
+			p 
+			{
+				color: #8B8B92;
+			}
+			/*for h1*/
+			h1
+			{
+				position: relative;
+				display: inline-block;
+				/*top: 50%;
+				left:50%;
+				transform: translate(-50%,-50%);*/
+				color:#8B8B92;
+				
+				&::after 
+				 {
+				  content: " ";
+				  width: 100%;
+				  background-color: #AD9966;
+				  bottom: 0;
+				  left: 0;
+				  position: absolute;
+				  height: 0.08em;
+				}
+				&::before 
+				{
+					content: " ";
+				  width: 100%;
+				  background-color: #AD9966;
+				  bottom: -0.4em;
+				  left: 0;
+				  position: absolute;
+				  height: 0.2em;
+				}
+			}
+			.content
+			{
+				margin: 2.5em 0;
+			}
+		}
+	}
+
+	.section12 
+	{
+		.container 
+		{
+			h1
+			{
+				position: relative;
+				display: inline-block;
+				top: 50%;
+				left:50%;
+				transform: translate(-50%,-50%);
+				color:white;
+				
+				&::after 
+				 {
+				  content: " ";
+				  width: 100%;
+				  background-color: #AD9966;
+				  bottom: 0;
+				  left: 0;
+				  position: absolute;
+				  height: 0.08em;
+				}
+				&::before 
+				{
+					content: " ";
+				  width: 100%;
+				  background-color: #AD9966;
+				  bottom: -0.4em;
+				  left: 0;
+				  position: absolute;
+				  height: 0.2em;
+				}
+			}
+			input , textarea
+			{
+				width: 100%;
+				padding: 0.5em;
+				border-radius: 0.3em;
+				border:0.2em solid white;
+				box-sizing: border-box;
+			}
+			select 
+			{
+				width: 100%;
+				padding: 0.5em;	
+				border:0.2em solid white;
+			}
+
+			.margin_form_bottom
+			{
+				margin-bottom: 1.5em;
+			}
+			
+		}
+	}
+}
+
+/*style start for online order page*/
+
+/*start of order page*/
+.order
+{
+	.section2
+	{
+		background-image: url('../images/online_order_title.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding-top: 41%;
+		min-height: 4em;
+		/* padding-top: 80%;*/
+		background-attachment: fixed;
+		position: relative;
+		background-position: center;
+		
+
+		.container 
+		{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			/* width: 70%;*/
+			transform: translate(-50%,-50%);
+			@include color-white();
+			text-align: center;
+			padding: 0 2em;
+			width: 100%;
+			box-sizing: border-box;
+			h1 
+			{
+				color: #AD9966;
+			}
+		}
+	}
+
+	.section5 
+	{
+		
+		background-image: url('../images/onine_order.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding-top: 40%;
+		/*min-height: 25em;
+		 padding-top: 80%;*/
+		background-attachment: fixed;
+		position: relative;
+		 /*background-position: center;*/
+		min-height: 45em;
+
+		.container
+		{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			width: 100%;
+			padding: 0 2em;
+			box-sizing: border-box;
+			.title 
+			{
+				justify-content: center;
+				align-items: center;
+				margin-bottom: 1.5em;
+				background-color: white;
+				i 
+				{
+					transform: rotate(-45deg);
+					font-size: 1em;
+				}
+				.i_left
+				{
+					margin-left: 0.5em;
+				}
+			}
+			.check_box
+			{
+				background-color: rgba(0,0,0,0);
+				color: white;
+				border: none;
+				.p_gold_bold
+				{
+					text-align: right;
+				}
+			}
+			.drinks 
+			{
+				margin-top: 5em;
+			}
+		}
+	}
+}
+
+/*end of order page*/
+
+
+/*start of menu page*/
+
+.menu
+{
+	.section2 
+	{
+
+		background-image: url('../images/onine_order.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding-top: 40%;
+		min-height: 10em;
+		
+		background-attachment: fixed;
+		position: relative;
+		 /*background-position: center;*/
+		
+		
+		.container 
+		{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			text-align: center;
+			color: white;
+			width: 100%;
+			padding: 0 2em;
+			box-sizing: border-box;
+			//  box-sizing: border-box; we calculate padding with width 100% so we minus 
+			// that padding with padding search artical for box sizing
+			h1 
+			{
+				color: #AD9966;
+			}
+
+		}
+	}
+	.section3 
+	{
+
+		background-image: url('../images/wine_img.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding-top: 40%;
+		min-height: 87em;
+		/* padding-top: 80%;*/
+		background-attachment: fixed;
+		position: relative;
+		background-position: center;
+		
+		
+		.container 
+		{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			width: 100%;
+			padding: 0 2em;
+			box-sizing: border-box;
+			color: white;
+			.center 
+			{
+				text-align: center;
+				i 
+				{
+					color: #AD9966;
+					width: 1.5em;
+				}
+			}
+			.drink_menu
+			{
+				margin: 2.5em 0 1em 0;
+				.margin_drink_div
+				{
+					margin: 2em 0 0 0;
+				}
+				h4
+				{
+					color: #AD9966;
+					margin-bottom: 0.5em;
+					background-color: white;
+					text-align: center;
+				}
+				.soft_drinks 
+				{
+					i 
+					{
+						transform: rotate(-45deg);
+					}
+
+				}
+				.i_left
+				{
+					margin-right: 0.5em;
+				}
+				.i_right
+				{
+					margin-left: 0.5em;
+				}
+				.drink_type
+				{
+					display: flex;
+					margin-bottom: 0.5em;
+					border-bottom: 0.1em solid #AD9966;
+					.type_drink
+					{
+						flex: 1 0 60%;
+						margin-right: 1em;
+						i 
+						{
+							color: #AD9966;
+							opacity: 0.7;
+							width: 1em;
+
+						}
+						
+					}
+					.drink_price
+					{
+						flex: 1 0 30%;
+						text-align: right;
+						.p_gold_bold
+						{
+							font-weight: inherit;
+							font-size: 0.8em;
+							font-weight: bold;
+						}
+					}
+				}
+			}
+
+		}
+	}
+}
+
+
+/*start of contact page*/
+.contact
+{
+	.section2
+	{
+
+		background-image: url(../images/online_order_title.png);
+		padding-top: 41%;
+		min-height: 5em;
+		position: relative;
+		background-size: cover;
+		background-repeat: no-repeat;
+		.container
+		{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			width: 100%;
+			padding: 0 2em;
+			box-sizing: border-box;
+			text-align: center;
+			color: white;
+			h1 
+			{
+				color: #AD9966;
+			}
+		}
+	}
+	.section3
+	{
+		.container 
+		{
+			.title p
+			{
+				color: #8B8B92;
+			}
+			
+			h1 
+			{
+				color: #8B8B92;
+				text-align: center;
+			}
+			.p_gold_bold
+			{
+				text-align: center;
+			}
+			form
+			{
+				margin-top: 2em;
+				
+				input, select, textarea
+				{
+					padding: 0.5em;
+					width: 100%;
+					box-sizing: border-box;
+					border:0.1em #8B8B92 solid;
+					border-radius: 0.3em;
+				}
+				.margin_form_bottom
+				{
+					margin-bottom: 1.5em;
+				}
+				.flex_div
+				{
+					flex: 1 0 30%;
+				}
+				.margin_right_flex_div
+				{
+					margin-right: 1em;
+				}
+				.contact_button
+				{
+					flex: 1 0 100%;
+				}
+			}
+
+		}
+	}
+}
+
+/*start of about page*/
+.about
+{
+	.section2
+	{
+
+		background-image: url(../images/about_img.jpg);
+		padding-top: 40%;
+		min-height: 4em;
+		position: relative;
+		background-size: cover;
+		background-repeat: no-repeat;
+		.container
+		{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			width: 100%;
+			padding: 0 2em;
+			box-sizing: border-box;
+			text-align: center;
+			color: white;
+			h1 
+			{
+				color: #AD9966;
+			}
+
+		}
+	}
+
+	.section3
+	{
+		.container
+		{
+			color: #8B8B92;
+			h1,p 
+			{
+				text-align: center;
+			}
+			.top
+			{ 
+				margin-top: 2em;
+
+				.img_left
+				{
+					margin-bottom: 1em;
+					flex:1 0 40%;
+					flex-direction: column;
+					img 
+					{
+						display: block;
+						width: 100%;
+					}
+					
+				}
+
+				.content_right{
+					flex:1 0 40%;
+					flex-direction: column;
+				}
+
+
+			}
+		}
+	}
+
+}

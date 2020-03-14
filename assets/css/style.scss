@@ -1,0 +1,51 @@
+$bp1:40em;
+$bp2:60em;
+$bp3: 80em;
+// $img-bg-padding-top:30%;
+$logo-padding:2em;
+$font-size-mobile:0.8em;
+$font-size-h1-mobile:1.5em;
+$font-size-ipad:1.2em;
+$font-size-h1-ipad:2em;
+
+
+/*for all scss file*/
+@import "nav";
+@import "slider";
+@import "main";
+@import "responsive";
+@import "tab";
+@import "pop_up";
+@import "footer";
+
+
+
+body 
+{
+	background-image: linear-gradient(#eee,#fafafa );
+	font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+
+
+*
+{
+	padding: 0;
+	margin: 0;
+	border:0;
+	list-style-type: none;
+}
+
+a 
+{
+	text-transform: uppercase;
+}
+
+.margin_top
+{
+	margin-top: 2.5em;
+}
+.margin_corner
+{
+	margin:0 1em;
+}

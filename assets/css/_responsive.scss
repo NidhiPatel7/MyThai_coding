@@ -1,0 +1,701 @@
+/*for mobile - inclusive*/
+
+/*for mobile margin left=2em & top 5.6em*/
+.bold 
+{
+	font-weight: bold;
+}
+.margin_corner_section
+{
+	margin:0 2em;
+}
+.margin_corner_section_flex
+{
+	margin:0 2em;
+}
+.margin_top_section
+{
+	margin-top: 5.6em;
+}
+.padding_section
+{
+	padding: 5.6em 0;
+}
+
+/*for all buttons*/
+.gold_button_border
+{
+	text-decoration: none;
+	color: #AD9966;
+	display: inline-block;
+	background-color: white;
+	border: 0.3em solid #AD9966;
+	 /*padding:1em 2em ;*/
+	padding: 0.5em 1.5em;
+	box-shadow: 4px 4px 2px 2px rgba(0, 0, 0, 0.5);
+	text-transform: uppercase;
+	cursor: pointer;
+	font-size: 0.8em;
+	&:hover
+	{
+		color: white;
+		background-color: #AD9966;
+		border: 0.3em solid #AD9966;
+		box-shadow: 5px 5px 2px 2px rgba(0, 0, 0, 0.6);
+		cursor: pointer;
+	}
+}
+
+.gold_button_color
+{
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+	background-color: #AD9966;
+	border: 0.3em solid #AD9966;
+	 /*padding:1em 2em ;*/
+	padding: 0.5em 1.5em;
+	box-shadow: 4px 4px 2px 2px rgba(0, 0, 0, 0.5);
+	text-transform: uppercase;
+	cursor: pointer;
+	font-size: 0.8em;
+	&:hover
+	{
+		color: #AD9966;
+		background-color: white;
+		border: 0.3em solid #AD9966;
+		box-shadow: 5px 5px 2px 2px rgba(0, 0, 0, 0.6);
+		cursor: pointer;
+	}
+}
+
+
+.white_button_color
+{
+	text-decoration: none;
+	color:  #AD9966;
+	background-color:white;
+	display: inline-block;
+	border: 0.3em solid white;
+	/* padding:1em 2em;*/
+	padding: 0.5em 1.5em;
+	box-shadow: 4px 4px 2px 2px rgba(0, 0, 0, 0.5);
+	text-transform: uppercase;
+	cursor: pointer;
+	font-size: 0.8em;
+	&:hover
+	{
+		/*color:white;
+		background-color:  #AD9966;
+		border: 0.3em solid #AD9966;*/
+		background-color:  rgba(0, 0, 0, 0.6);;
+		box-shadow: 5px 5px 2px 2px rgba(0, 0, 0, 0.6);
+		cursor: pointer;
+	}
+}
+/*for small tablet - inclusive*/
+
+@media only screen and (min-width : $bp1) 
+{
+	p,a
+	{
+		font-size: $font-size-ipad ;
+	}
+	h1
+	{
+		font-size: $font-size-h1-ipad ;
+	}
+	.gold_button_border,.gold_button_color,.white_button_color
+	{
+		padding:0.1em 0.4em;
+	}
+}
+
+
+
+/*for small tablet - exclusive - use with care*/
+
+/*@media only screen and (min-width : 40em) and (max-width : 59.99999em) {
+
+
+}*/
+
+/*for small tablet - inclusive*/
+
+@media only screen and (min-width : $bp1)
+{
+
+	/*resrevation on menu page*/
+	.index
+	{
+		.section12 
+		{
+			.container 
+			{
+				form 
+				{
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
+				}
+				.flex_div
+				{
+					flex: 1 0 40%;
+				}
+				.flex_div_button
+				{
+					flex: 1 0 90%;
+					text-align: center;
+				}
+				.margin_right_flex_div
+				{
+					margin-right: 2em;
+				}
+			}
+		}
+
+
+	 	.section7 
+		{
+			min-height: 7em;
+		 	
+		 }
+	
+	}
+	.order
+	{
+		.modal-content
+		{
+			
+			// min-width: 20em;
+			// max-width: 21em;
+		}
+	}
+	.contact
+	{
+		.section3
+		{
+			.container 
+			{
+				form 
+				{
+					display: flex;
+					flex-wrap: wrap;
+				}
+			}
+		}
+	}
+	.menu
+	{
+		.section3
+		{
+			.container 
+			{
+				.drink_menu
+				{
+					.drink_type
+					{
+						.drink_price
+						{
+							.p_gold_bold
+							{
+								font-size: 1.2em;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/*for tablet - inclusive*/
+
+@media only screen and (min-width : $bp2)
+{
+	.margin_corner_section
+	{
+		margin:0 3em;
+	}
+	.margin_corner_section_flex
+	{
+		margin:0 3em;
+	}
+	p,a
+	{
+		font-size:1.5em;
+	}
+	.index
+	{
+		.section2
+		{
+			.container 
+			{
+				padding: 0 3em;
+			}
+		}
+	 	.section3 
+	 	{
+	 		.container
+	 		{
+
+	 			display: flex;
+	 			align-items: center;
+	 			/*align-items: center; so image width come big 
+	 			 and description width goes bit small*/
+	 			 justify-content: flex-end;
+	 			 position: relative;
+	 		}
+	 	}
+
+	 	.left{
+	 		flex: 0 0 60%;
+	 		position: absolute;
+	 		left: 0;
+	 		max-width: 34em;
+	 		/*// position: relative; flex is not work with absolute so we use relative
+	 		// left:2em;*/
+	 		// transform: translate(3em,0);
+	 		/*// transform: translate(2em,0); without position we put description top of the image*/
+			
+			
+	 	}
+	 	.right
+	 	{
+			flex: 0 0 50%;
+	 		img 
+	 		{
+	 			margin: 0;
+	 			/*// min-height: 25em;*/
+	 		}
+	 	}
+		.relative
+		{
+			position: relative;
+
+		}
+	}
+	.index 
+	{
+		.section4 
+		{
+			min-height: 18em;
+			.container
+			{
+				margin: 0 3em;
+				.img
+				{
+					position: absolute;
+					top: 2em;
+					right: 0em;
+					width: 35%;
+					margin-right: 3em;
+					box-sizing: border-box;
+				}
+			}
+		}
+	}
+	.description_offers
+	{
+		position: absolute;
+		top: 5em;
+		left: 3em;
+	}
+	 .index
+	 {	
+	 	.section6
+	 	{
+	 		margin-top: 26.8em;
+	 	}
+		.section7
+	 	{
+	 		padding-left:3em;
+	 		padding-right: 3em;
+	 		min-height:12em;
+	 	}
+	 	.section6
+	 	{
+	 		.container
+	 		{
+	 			display: flex;
+	 			align-items: center;
+	 			/*align-items: center; so image width come big 
+	 			 and description width goes bit small*/
+	 			 justify-content: flex-end;
+	 			 position: relative;
+	 		}
+	 	}
+	 	
+	}
+ 	/*===== menu of index page=======*/
+
+	.tabContainer
+	{
+		ul 
+		{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			li 
+			{
+				flex:1 0 10%;
+				justify-content: center;
+				display: inline-block;
+				text-align: center;
+				margin: 0 0.5em;
+				border-bottom: none;
+				padding: 0;
+				&.active 
+				{
+					
+					display: inline-block;
+					text-align: center;
+				}
+
+			}
+		}
+	}
+
+
+	/*for footer1 */
+	.section9 
+	{
+		.container
+		{
+			display: flex;
+		
+			.map_class
+			{
+				flex: 1 0 40%;
+				iframe 
+				{
+					height: 100%;
+				}
+			}
+			.contact_description
+			{
+				flex: 1 0 40%;
+				margin-top: 0;
+				margin-left: 3em;
+			}
+		}
+	}
+
+	/*style start for online order page*/
+
+	.order
+	{
+		.section2
+		{
+			.container
+			{
+				padding: 0 3em;
+			}
+		}
+		// start section3
+		.modal-content
+		{
+			// min-width: 16em;
+			max-width: 19em;
+			// font-size: 1.5em;
+		}
+		// start section5
+		.section5 
+		{
+			// min-height: 5em;
+			.container 
+			{
+				// display: flex;
+				// justify-content: space-between;
+				padding: 0 3em;
+
+			}
+		}
+	}
+
+
+	.menu
+	{
+		.section2 
+		{
+			min-height: 1em;
+			.container
+			{
+				padding: 0 3em;
+			}
+		}
+		.section3
+		{
+			min-height: 96em;
+			.container
+			{
+				padding: 0 3em;
+				.drink_menu
+				{
+					.drink_type
+					{
+						.drink_price
+						{
+							.p_gold_bold
+							{
+								font-size: 1.5em;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
+
+
+
+/*for destop - inclusive*/
+
+@media only screen and (min-width : $bp3)
+ {
+
+ 	p
+	{
+		font-size:1.2em ;
+	}
+	// .gold_button_border,.gold_button_color,.white_button_color
+	// {
+	// 	font-size: 1em;
+	// }
+	h1
+	{
+		font-size: 2.5em ;
+	}
+	.section9
+		{
+			.container 
+			{
+				.description3
+				{
+					.flex
+					{
+						a 
+						{
+							font-size: 1.2em;
+						}
+					} 
+				}
+			}
+		}
+	/*for all button*/
+	.gold_button_border
+	{
+		padding: 0.3em 1em;
+	}
+	.gold_button_color
+	{
+		padding: 0.3em 1em;
+	}
+	.white_button_color
+	{
+		padding: 0.3em 1em;
+	}
+
+	/*for navigation*/
+ 	header
+ 	{
+ 		padding: 1em 0;
+	 	.nav 
+		{
+			ul
+			{
+				li
+				{
+					a
+					{
+						font-size:1em;
+
+						&:hover
+						{
+							font-size:1em;
+
+						}
+					}
+				} 
+			} 
+
+			.language 
+			{
+				select 
+				{	
+					margin: 0 0 0 1em;
+					font-size: 1em;
+				}
+
+			}
+		}
+	}
+
+	.container
+	{
+		max-width: 77em;
+		margin: auto;
+		justify-content: flex-end;
+		position: relative;
+	}
+
+	/*for slider*/
+	
+		.index 
+		{
+			.section2 
+
+			{
+				padding-top: 45%;
+			}
+		}
+
+
+	/*for section 4 special offers*/
+	.index
+	{
+
+		.section4
+		{
+			
+			.container
+			{
+				max-width: 77em;
+				margin: auto;
+
+				.img 
+				{
+					margin-right: 0;
+				}
+			}
+		}
+		.section7
+		{
+			min-height: 0;
+		}
+
+		/*for special item section3 and section6*/
+	.left
+	{
+		flex: 0 0 60%;
+		transform:none;
+		position: absolute;
+		left:0;
+		max-width: 40em;
+	}
+	.right
+	{
+		flex: 0 0 50%;
+	}
+	}
+	.description_offers
+	{
+		left: auto;
+	}
+	/*for section 8 tab*/
+	.tabContainer 
+	{
+		.content
+		{
+		 	.tab_content
+		 	{
+		 		min-height: 12em !important;
+		 		flex: 0 0 47%;
+		 	}
+		 	.tab_flex
+		 	{
+		 		display: flex;
+		 		flex-wrap: wrap;
+		 		justify-content: space-between;
+		 		align-items: center;
+		 	}
+		}
+	}
+
+
+	/*resrevation on menu page*/
+	.index
+	{
+		.section12 
+		{
+			.container 
+			{
+				
+				.flex_div
+				{
+					flex: 1 0 30%;
+				}
+				.phone_res,.time_res
+				{
+					margin-right: 2em;
+				}
+				.date_res
+				{
+					margin-right: 0;
+				}
+			}
+		}
+	}
+
+	.order 
+	{
+		
+		.section2
+		{
+			padding-top: 29%;
+		}
+
+		.modal-content
+		{
+			
+			max-width: 16em;
+			min-width: 15em;
+			font-size: 1em !important;
+		}
+	}
+
+	.about 
+	{
+		.section2 
+		{
+			padding-top: 30%;
+		}
+		.container 
+		{
+			.top 
+			{
+				display: flex;
+				flex-direction: row;
+				box-sizing: border-box;
+				// flex-wrap:wrap;
+				// align-items: center;
+				.img_left
+				{
+					margin-right: 2em;
+				}
+			}
+		}
+	}
+
+	.menu
+	{
+		.section2 
+		{
+			padding-top: 29%;
+		}
+		.section3 
+		{
+			min-height: 75em;
+		}
+	}
+	.contact
+	{
+		.section2
+		{
+			padding-top: 29%;
+		}
+
+	}
+}
+

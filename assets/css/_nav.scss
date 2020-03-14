@@ -1,0 +1,323 @@
+p,a 
+{
+	line-height: 1.5em;
+	font-size: $font-size-mobile;
+}
+ h1, h2, h3, h4, h5, h6
+{
+	line-height: 1em;
+	/*text-align: center;*/
+	text-transform: uppercase;
+	padding:0.2em 0;
+	font-size: $font-size-h1-mobile;
+}
+
+
+
+
+/*css for navigation*/
+/*for all property*/
+@mixin color-gold()
+{
+	color: #ad9966;
+}
+@mixin color-white()
+{
+	color: white;
+}
+@mixin bg-color-gold()
+{
+	background-color: #ad9966;
+}
+.nav
+{
+	ul 
+	{
+		li 
+		{
+			a 
+			{
+				text-decoration: none;
+				// border: 1em solid red;
+				@include color-white();
+				/*font-size: 1.2em;*/
+				font-weight: bold;
+				display: inline-block;
+				text-transform: uppercase;
+
+
+				&:hover
+				{
+					font-size:1em;
+					border-bottom: 0.1em solid white;
+				}
+			}
+			margin:0.5em;
+
+
+			&.reservation a
+			{
+				border: 0.2em solid white;
+				padding: 0.5em;
+				// margin-left: 3em;
+
+			}
+
+		}
+	}
+
+	.language 
+	{
+		select 
+		{
+			border:0.2em solid white;
+			background-color: rgba(0,0,0,0);
+			color: white;
+			margin: 1em;
+			padding: 0.5em;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 0.8em;
+			/*font-size: 1.2em;*/
+			option 
+			{
+				@include color-gold();
+
+				font-weight:bold;
+				border:1px red solid
+			}
+		}
+	}
+}
+
+header
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding:0.3em 2em;
+	align-items: center;
+}
+
+.logo
+{
+	flex:0 0 auto;
+	// i 
+	// {
+	// 	@include color-white();
+	// 	font-size: 2em;
+	// }
+	img 
+	{
+		height: 2.5em;
+	}
+}
+.bars 
+{
+	i 
+	{
+		@include color-white();
+		font-size: 2em;
+	}
+}
+.nav 
+{
+	position: absolute;
+	top: 75%;
+	left: 0;
+	@include bg-color-gold();
+	text-align: center;
+	padding: 3em 0;
+	width: 100%;
+	margin: 1em 0;
+	display: none;
+
+}
+
+	.section1
+	{
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		width: 100%;
+		background-color: rgba(0,0,0,0.6);
+	}
+
+
+
+/*for small tablet - inclusive*/
+
+@media only screen and (min-width : $bp1) 
+{
+	p,a
+	{
+		font-size: $font-size-ipad ;
+	}
+	h1
+	{
+		font-size: $font-size-h1-ipad ;
+	}
+
+	/*for navigation*/
+	.nav 
+	{
+		ul
+		{
+			li
+			{
+				a
+				{
+					font-size: $font-size-ipad;
+
+					&:hover
+					{
+						font-size:1.4em;
+
+					}
+				}
+			} 
+		} 
+
+		.language 
+		{
+			select 
+			{	
+
+				font-size: $font-size-ipad;
+			}
+
+		}
+	}
+
+
+}	
+
+/*for small tablet - exclusive - use with care*/
+
+@media only screen and (min-width : 60em) and (max-width : 65.5em) 
+{
+	header 
+	{
+		.nav 
+		{
+			ul
+			{
+				li
+				{
+					a
+					{
+						font-size: 0.6em;
+						&:hover
+						{
+							font-size: 0.6em;
+						}
+					}
+				} 
+			} 
+		}
+	}
+}
+
+/*for  tablet - inclusive*/
+
+@media only screen and (min-width : 65.6em) 
+{
+	header 
+	{
+		.nav 
+		{
+			ul
+			{
+				li
+				{
+					a
+					{
+						font-size: 0.8em;
+						&:hover
+						{
+							font-size: 0.8em;
+						}
+					}
+				} 
+			} 
+		}
+	}
+}
+/*for  tablet - inclusive*/
+
+@media only screen and (min-width : $bp2) 
+{
+	header{
+
+		align-items: center;
+		padding: 0.3em 3em;
+		.bars 
+			{
+				display: none;
+			}
+
+		.nav
+			{
+				position: static;
+				display: flex !important;
+				align-items: center;
+				flex-wrap: wrap;
+				background-color: rgba(0,0,0,0);
+				padding: 0;
+				margin: 0;
+				width: auto;
+				height: auto;
+
+				ul 
+				{
+					display: flex;
+					flex-wrap: wrap;
+					li 
+					{
+						a 
+						{
+							//font-size: 0.8em;
+							padding: 0.3em;
+
+							&:hover
+							{
+								//font-size: 0.8em;
+								@include color-gold();
+							}
+						}
+					}
+				}
+
+				.language
+				{
+					select 
+					{
+						font-size: 0.8em;
+						margin: 0;
+					}
+				}
+
+				.reservation{
+					/*position: absolute;
+					right:1em;*/
+					 /*we want reservation on right side so use position absolute*/
+				}
+			}
+	}
+	
+}
+
+
+/*for destop - inclusive*/
+
+@media only screen and (min-width : $bp3)
+ { 
+ 	.logo
+ 	{
+		img 
+		{
+			height: 3em;
+		}
+	}
+}

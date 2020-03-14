@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<!-- use for mobile version search view port for example -->
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<title>MyThai</title>
+			<!-- use for font -->
+			<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700">
+			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+			<!-- use for output for all browser -->
+			<link rel="stylesheet" type="text/css" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
+			<!-- use for my website -->
+			<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+			<script src="assets/js/jquery.js"></script>
+			
+		</head>
+		<body class="order">
+			<div class="wrap">
+				<!--start section of navigation -->
+					<section class="section1">
+					<div class="container">
+						<header>
+							<div class="logo">
+								<img src="assets/images/logo.png" alt="MyThai">
+							</div>
+							<div class="bars">
+								<i class="fas fa-bars"></i>
+							</div>
+							<div class="nav">
+								<ul>
+									<li>
+										<a href="index.html">Home</a>
+									</li>
+									<li>
+										<a href="about.html">About</a>
+									</li>
+									<li>
+										<a href="menu.html">Menu</a>
+									</li>
+									<li>
+										<a href="contact.html">Contact</a>
+									</li>
+									<li>
+										<a href="#">Online Order</a>
+									</li>
+									<li class="reservation">
+										<a href="tel:+64 123 456 78">Reservation:+64 123 456 78</a>
+									</li>
+								</ul>
+								<div class="language">
+									<select>
+										<option value="language" selected>Select Language</option>
+									  	<option value="maori">Maori</option>
+									  	<option value="chinese">Chinese</option>
+									  	<option value="japanese">Japanese</option>
+									  	<option value="english">English</option>
+									</select>
+								</div>
+
+							</div>
+							<!-- <div class="reservation">
+								<a href="#">+64 123 456 78</a>
+							</div> -->
+						</header>
+					</div>
+				</section>
+					<!--end section of navigation -->
+
+					<!-- section of img start -->
+					<section class="section2" id="top">
+						<div class="container">
+							<h1>we provide online order services.</h1>
+							<p>Our food start from $9.00 only so order now.</p>
+						</div>
+
+					</section>
+					<!-- section of img end -->
+				<main>
+					<!-- for shopping cart -->
+					<div class="cart_relative">
+						<div class="shooping" id="cart">
+							<i class="fas fa-shopping-cart"></i>
+						</div>
+						<div class="round_lable" id="round_lable">
+							<p>1</p>
+						</div>
+					</div>
+					<!--start section of  menu -->
+					<section class="section8 margin_top_section">
+						<div class="container margin_corner_section">
+							<h1 class="h1_line">our menu</h1>
+							<div class="tabContainer">
+								<ul>
+									<li id="tab1" class="active">
+										<i class="fas fa-utensils"></i>
+										<p>Appetisers</p>
+									</li>
+									<li id="tab2">
+										<i class="fas fa-utensils"></i>
+										<p>Salads/Curries</p>
+									</li>
+									<li id="tab3">
+										<i class="fas fa-utensils"></i>
+										<p>Soups/Noodles/Rice</p>
+									</li>
+									<li id="tab4">
+										<i class="fas fa-utensils"></i>
+										<p>Wok-Tossed/Seafood</p>
+									</li>
+									<li id="tab5">
+										<i class="fas fa-utensils"></i>
+										<p>Vegetarian</p>
+									</li>
+								</ul> 
+								<div class="content">
+
+									<div id="tab1-content" class="hide active ">
+										<div class="tab_flex">
+										<div class="tab_content" id="popup">
+											<div class="img_left">
+												<img src="assets/images/1_chicken_menu.png" alt="CHICKEN SATAY">
+											</div>
+											<div class="content_center">
+												<p class="gold_bold">CHICKEN SATAY</p><p class="gold"> (SATAY GAI)</p>
+												<p class="gray">coconut, lemongrass, peanut sauce & salsa.</p>
+											</div>
+											<div class="content_right">
+												<p>$9.50</p>
+											</div>
+										</div>
+										<div class="tab_content" id="popup">
+											<div class="img_left">
+												<img src="assets/images/2_prawn_menu.png" alt="PRAWN FRESH ROLLS">
+											</div>
+											<div class="content_center">
+												<p class="gold_bold">PRAWN FRESH ROLLS </p><p class="gold">(POR PIA SOD PAD THAI)</p>
+												<p class="gray">tofu, noodles, beansprouts, chives & peanuts, sauce.</p>
+											</div>
+											<div class="content_right">
+												<p>$10.50</p>
+											</div>
+										</div>
+										<div class="tab_content" id="popup">
+											<div class="img_left">
+												<img src="assets/images/3CURRY PUFFS_menu.png" alt="CURRY PUFFS">
+											</div>
+											<div class="content_center">
+												<p class="gold_bold">CURRY PUFFS</p><p class="gold">(KARI PUFF)</p>
+												<p class="gray"> Puff pastry crescents of slow braised pork & vegetables & sweet chilli sauce.</p>
+											</div>
+											<div class="content_right">
+												<p>$9.50</p>
+											</div>
+										</div>
+										<!-- <div class="tab_content" id="popup">
+											<div class="img_left">
+												<img src="assets/images/1_chicken_menu.png" alt="CHICKEN SATAY">
+											</div>
+											<div class="content_center">
+												<p class="gold_bold">CHILLI & LIME FRIED CHICKEN </p><p class="gold">(GAI TOD)</p>
+												<p class="gray">chicken pieces, Thai spices & lime confit, tangy mild roasted chilli & tamarind sauce.</p>
+											</div>
+											<div class="content_right">
+												<p>$10.50</p>
+											</div>
+										</div> -->
+										<div class="tab_content" id="popup">
+											<div class="img_left">
+												<img src="assets/images/4_SPRING ROLLS.png" alt="SPRING ROLLS">
+											</div>
+											<div class="content_center">
+												<p class="gold_bold">SPRING ROLLS</p><p class="gold"> (POH PIA TOD)</p>
+												<p class="gray">With straw mushroom, vermicelli & vegetables served with sweet chilli sauce.</p>
+											</div>
+											<div class="content_right">
+												<p>$9.00</p>
+											</div>
+										</div>
+										<div class="tab_content" id="popup">
+											<div class="img_left">
+												<img src="assets/images/5_SPICY KING PRAWNS.png" alt="Prawn">
+											</div>
+											<div class="content_center">
+												<p class="gold_bold">SPICY KING PRAWNS</p><p class="gold">(SOM TUM THAI)</p>
+												<p class="gray">prawns, green papaya, tomato, carrot, peanuts, garlic & chilli, tamarind & lime dressing.</p>
+											</div>
+											<div class="content_right">
+												<p>$12.50</p>
+											</div>
+										</div>
+										<div class="tab_content" id="popup">
+											<div class="img_left">
+												<img src="assets/images/6_THAI STYLE ANGUS BEEF SKEWERS.png" alt="Beef">
+											</div>
+											<div class="content_center">
+												<p class="gold_bold">THAI STYLE ANGUS BEEF SKEWERS</p><p class="gold">(MOO KROB)</p>
+												<p class="gray">beef meatball , lime leaf, lemongrass, chilli & fresh herbs, chargrilled & tamarind sauce.</p>
+											</div>
+											<div class="content_right">
+												<p>$9.50</p>
+											</div>
+										</div>
+										<!-- <div class="tab_content" id="popup">
+											<div class="img_left">
+												<img src="assets/images/1_chicken_menu.png" alt="CHICKEN SATAY">
+											</div>
+											<div class="content_center">
+												<p class="gold_bold">	PRAWN RICE PAPER ROLLS </p><p class="gold">(POR PIA SOD GOONG)</p>
+												<p class="gray">prawn, tofu, mint, Thai slaw, noodles & toasted coconut, sauce.</p>
+											</div>
+											<div class="content_right">
+												<p>$10.50</p>
+											</div>
+										</div> -->
+									</div>
+									</div><!-- end of tab1 -->
+									
+									<div id="tab2-content" class="hide ">
+									<div class="tab_flex">
+										<div class="tab_content" id="popup">
+											<div class="img_left">
+												<img src="assets/images/1_chicken_menu.png" alt="CHICKEN SATAY">
+											</div>
+											<div class="content_center">
+												<p class="gold_bold">CHILLI CHICKEN LARB </p><p class="gold">(LARB GAI)</p>
+												<p class="gray">chicken, mint, coriander, shredded vegetables, beansprouts, capsicum & ground roasted rice, lime dressing.</p>
+											</div>
+											<div class="content_right">
+												<p>$16.90</p>
+											</div>
+										</div>
+
+										<div class="tab_content" id="popup">
+											<div class="img_left">
+												<img src="assets/images/SPICY BEEF (NAHM TOK NUA).png" alt="Beef">
+											</div>
+											<div class="content_center">
+												<p class="gold_bold">SPICY BEEF </p><p class="gold">(LARB GAI)</p>
+												<p class="gray">beef,noodles, coriander, mint, beansprouts, shredded vegetables, crispy shallots & rice, chilli & lime dressing.</p>
+											</div>
+											<div class="content_right">
+												<p>$16.90</p>
+											</div>
+										</div>
+
+										<div class="tab_content" id="popup">
+											<div class="img_left">
+												<img src="assets/images/RED CURRY (GANG DANG).png" alt="RedCurry">
+											</div>
+											<div class="content_center">
+												<p class="gold_bold">	RED CURRY </p><p class="gold">(GANG DANG)</p>
+												<p class="gray">vegetables, young coconut milk, bamboo shoots, capsicum, kaffir lime leaf & fresh sweet basil.</p>
+											</div>
+											<div class="content_right">
+												<p>$16.90</p>
+											</div>
+										</div>
+										<div class="tab_content" id="popup">
+											<div class="img_left">
+												<img src="assets/images/GREEN CURRY (GANG KIEW WAAN).png" alt="GreenCurry">
+											</div>
+											<div class="content_center">
+												<p class="gold_bold">GREEN CURRY </p><p class="gold">(GANG KIEW WAAN)</p>
+												<p class="gray">vegetables, young coconut milk, bamboo shoots, capsicum, kaffir lime leaf & fresh sweet basil. </p>
+											</div>
+											<div class="content_right">
+												<p>$16.90</p>
+											</div>
+										</div>
+										<div class="tab_content" id="popup">
+											<div class="img_left">
+												<img src="assets/images/LAMB CURRY (GANG MASSAMUN GAE).png" alt="LAMBCurry ">
+											</div>
+											<div class="content_center">
+												<p class="gold_bold">LAMB CURRY </p><p class="gold">(LARB GAI)</p>
+												<p class="gray">lamb, aromatic spices, young coconut milk, potato, onion, crispy shallots & roasted peanuts.</p>
+											</div>
+											<div class="content_right">
+												<p>$18.90</p>
+											</div>
+										</div>
+										<div class="tab_content" id="popup">
+											<div class="img_left">
+												<img src="assets/images/BBQ DUCK CURRY (GANG PHET PED YANG).png" alt="Curry">
+											</div>
+											<div class="content_center">
+												<p class="gold_bold">BBQ DUCK CURRY </p><p class="gold">(GANG PHET PED YANG)</p>
+												<p class="gray">pineapple, beans, rambutan, market fresh vegetables, kaffir lime leaf & fresh sweet basil in a red curry & young coconut sauce.</p>
+											</div>
+											<div class="content_right">
+												<p>$18.90</p>
+											</div>
+										</div>
+									</div><!-- end of tab_flex -->
+									</div><!-- end of tab2 -->
+									
+									<div id="tab3-content" class="hide ">
+									<div class="tab_flex">
+										<div class="tab_content" id="popup">
+											<div class="img_left">
+												<img src="assets/images/chicken_t_y_soup.png" alt="CHICKEN">
+											</div>
+											<div class="content_center">
+												<p class="gold_bold">CHICKEN TOM YUM SOUP </p><p class="gold">(TOM YUM GAI)</p>
+												<p class="gray">Hot, sour & spicy with  mushroom, lemongrass, galangal & kaffir lime leaf.</p>
+											</div>
+											<div class="content_right">
+												<p>$10.90</p>
+											</div>
+										</div>
+										<div class="tab_content" id="popup">
+											<div class="img_left">
+												<img src="assets/images/g_p_prawn.png" alt="PRAWN">
+											</div>
+											<div class="content_center">
+												<p class="gold_bold">PRAWN TOM YUM SOUP </p><p class="gold">(TOM YUM GOONG)</p>
+												<p class="gray">Hot, sour & spicy with  mushroom, lemongrass, galangal & kaffir lime leaf.</p>
+											</div>
+											<div class="content_right">
+												<p>$10.90</p>
+											</div>
+										</div>
+										<div class="tab_content" id="popup">
+											<div class="img_left">
+												<img src="assets/images/g_p_prawn.png" alt="CHICKEN">
+											</div>
+											<div class="content_center">
+												<p class="gold_bold">CHICKEN PAD THAI NOODLES </p><p class="gold">(PAD THAI GAI)</p>
+												<p class="gray">Noodles with tamarind, free-range egg, beansprouts, chives & crushed peanuts.</p>
+											</div>
+											<div class="content_right">
+												<p>$16.90</p>
+											</div>
+										</div>
+										<div class="tab_content" id="popup">
+											<div class="img_left">
+												<img src="assets/images/g_p_prawn.png" alt="PRAWN">
+											</div>
+											<div class="content_center">
+												<p class="gold_bold">PRAWN PAD THAI NOODLES </p><p class="gold">(PAD THAI GAI)</p>
+												<p class="gray">Noodles with tamarind, free-range egg, beansprouts, chives & crushed peanuts.</p>
+											</div>
+											<div class="content_right">
+												<p>$16.90</p>
+											</div>
+										</div>
+									</div><!-- end tab_flex-->
+									</div><!-- end of tab3 -->
+									
+									<div id="tab4-content" class="hide ">
+									<div class="tab_flex">
+										<div class="tab_content" id="popup">
+											<div class="img_left">
+												<img src="assets/images/chicken_cas_nuts.png" alt="CHICKEN ">
+											</div>
+											<div class="content_center">
+												<p class="gold_bold">CHICKEN CASHEW NUTS </p><p class="gold">(GAI PAD MED MA-MEUNG)</p>
+												<p class="gray">with mild roasted chilli paste, water chestnuts, spring onion & market fresh vegetables.</p>
+											</div>
+											<div class="content_right">
+												<p>$17.90</p>
+											</div>
+											
+										</div>
+										<div class="tab_content" id="popup">
+											<div class="img_left">
+												<img src="assets/images/g_p_prawn.png" alt="PRAWN">
+											</div>
+											<div class="content_center">
+												<p class="gold_bold">GARLIC & PEPPER PRAWN </p><p class="gold"> (PAD KRATIEM PRIK THAI GAI)</p>
+												<p class="gray">Free-range prawn wok tossed with spring onion, market fresh vegetables & crispy shallots.</p>
+											</div>
+											<div class="content_right">
+												<p>$16.90</p>
+											</div>
+											
+										</div>
+										<div class="tab_content" id="popup">
+											<div class="img_left">
+												<img src="assets/images/chilli_p_fish.png" alt="CHICKEN FISH">
+											</div>
+											<div class="content_center">
+												<p class="gold_bold">CHILLI PEPPER FISH </p><p class="gold">(PLA PAD PRIK GANG)</p>
+												<p class="gray">Market fresh fish with lemongrass, beans, capsicum & carrot in a red curry & coconut sauce.</p>
+											</div>
+											<div class="content_right">
+												<p>$16.90</p>
+											</div>
+										</div>
+									</div><!-- end of tab_flex -->
+									</div><!-- end of tab4 -->
+									
+									<div id="tab5-content" class="hide ">
+									<div class="tab_flex">
+										<div class="tab_content" id="popup">
+											<div class="img_left">
+												<img src="assets/images/springroll.png" alt="ROLLS">
+											</div>
+											<div class="content_center">
+												<p class="gold_bold">SPRING ROLLS </p><p class="gold">(POH PIA TOD)</p>
+												<p class="gray">With straw mushroom, vermicelli & vegetables served with sweet chili sauce.</p>
+											</div>
+											<div class="content_right">
+												<p>$9.50</p>
+											</div>
+										</div>
+										<div class="tab_content" id="popup">
+											<div class="img_left">
+												<img src="assets/images/toffu.png" alt="toffu">
+											</div>
+											<div class="content_center">
+												<p class="gold_bold">TOFU SATAY  </p><p class="gold">(SATAY TOHU)</p>
+												<p class="gray">Deep fried tofu served with peanut sauce & cucumber/red onion salsa.</p>
+											</div>
+											<div class="content_right">
+												<p>$9.90</p>
+											</div>
+										</div>
+									</div><!-- end of tab_flex -->
+									</div><!-- end of tab 5 -->
+								</div>
+							</div>
+
+								
+							</div>
+							
+						</div>
+					</section>
+					<!--end section of menu -->
+					<!-- for extras and drinks -->
+					<section class="section5 margin_top_section">
+						<div class="container">
+							<div class="extras">
+												<div class="title">
+													
+													<h4><i class="fas fa-carrot"></i>Extras<i class="fas fa-carrot i_left"></i></h4>
+												</div>
+												<div class="check_box box_form">
+													<div class="flex_checkbox_left">
+														<div class="flex_checkbox">
+															<div class="checkbox_cl"><input type="checkbox" name="extras" value="">STEAMED JASMINE RICE</div>
+															<p class="p_gold_bold">$2.00</p>
+														</div>
+
+	  													<div class="flex_checkbox">
+	  														<div class="checkbox_cl"><input type="checkbox" name="extras" value="">STICKY RICE</div>
+	  														<p class="p_gold_bold">$3.00</p>
+	  													</div>
+	  													<div class="flex_checkbox">
+	  														<div class="checkbox_cl"><input type="checkbox" name="extras" value="">	THAI ROTI BREAD </div>
+	  														<p class="p_gold_bold">$4.00</p>
+	  													</div>
+	  													<div class="flex_checkbox">
+	  														<div class="checkbox_cl"><input type="checkbox" name="extras" value="">FRIED VEGETABLES</div>
+	  														<p class="p_gold_bold">$9.00</p>
+	  													</div>
+	  												</div>
+
+	  												<div class="flex_checkbox_right">
+	  													<div class="flex_checkbox">
+	  														<div class="checkbox_cl"><input type="checkbox" name="extras" value="">EXTRA CASHEW NUTS</div>
+	  														<p class="p_gold_bold">$2.50</p>
+	  													</div>
+
+	  													<div class="flex_checkbox">
+	  														<div class="checkbox_cl"><input type="checkbox" name="extras" value="">	PEANUT SAUCE</div>
+	  														<p class="p_gold_bold">$2.00</p>
+	  													</div>
+
+	  													<div class="flex_checkbox">
+	  														<div class="checkbox_cl"><input type="checkbox" name="extras" value="">SWEET CHILLI SAUCE</div>
+	  														<p class="p_gold_bold">$2.00</p>
+	  													</div>
+
+	  													<div class="flex_checkbox">
+	  														<div class="checkbox_cl"><input type="checkbox" name="extras" value="">SALSA</div>
+	  														<p class="p_gold_bold">$2.00</p>
+	  													</div>
+	  												</div>
+												</div>
+							</div>
+
+							<div class="drinks ">
+
+												<div class="title">
+													
+													<h4><i class="fas fa-wine-bottle"></i>Drinks<i class="fas fa-wine-bottle i_left"></i></h4>
+												</div>
+												<div class="check_box box_form">
+													<div class="flex_checkbox">
+														<div class="checkbox_cl"><input type="checkbox" name="extras" value="">COCA-COLA 1.5 LITRE</div>
+														<p class="p_gold_bold">$4.50</p>
+													</div>
+
+  													<div class="flex_checkbox">
+  														<div class="checkbox_cl"><input type="checkbox" name="extras" value="">DIET COKE 1.5 LITRE</div>
+  														<p class="p_gold_bold">$4.50</p>
+  													</div>
+  													<div class="flex_checkbox">
+  														<div class="checkbox_cl"><input type="checkbox" name="extras" value="">COKE ZERO 1.5 LITRE</div>
+  														<p class="p_gold_bold">$4.50</p>
+  													</div>
+  													<div class="flex_checkbox">
+  														<div class="checkbox_cl"><input type="checkbox" name="extras" value="">SPRITE 1.5 LITRE</div>
+  														<p class="p_gold_bold">$4.50</p>
+  													</div>
+  												</div>
+							</div>
+						</div>
+						
+					</section>
+					<!--start section of popup -->
+					<section class="section3">
+						<div class="container">
+							<div class="bg-modal">
+								<div class="modal-content">
+									<div class="close close_css">+</div>
+									<div class="popup_description">
+										<div class="tab_content_popup box_form" id="popup">
+											<div class="img_left">
+												<img src="assets/images/1_chicken_menu.png" alt="CHICKEN SATAY">
+											</div>
+											<div class="content_center">
+												<p class="gold_bold">CHICKEN SATAY</p><p class="gold"> (SATAY GAI)</p>
+												<p class="gray">coconut, lemongrass, peanut sauce & salsa.</p>
+											</div>
+											<div class="content_right">
+												<p>$9.50</p>
+											</div>
+										</div>
+
+										<form>
+											<div class="hot_food margin_2em">
+												<div class="title">
+													
+													<p><i class="fas fa-pepper-hot"></i>Heat</p>
+												</div>
+												<div class="options box_form">
+													
+													<label class="container">Mild
+													  <input type="radio" checked="checked" name="radio">
+													  <span class="checkmark"></span>
+													</label>
+													<label class="container">Medium
+													  <input type="radio" checked="checked" name="radio">
+													  <span class="checkmark"></span>
+													</label>
+													<label class="container">Hot
+													  <input type="radio" checked="checked" name="radio">
+													  <span class="checkmark"></span>
+													</label>
+													<label class="container">Thai Hot
+													  <input type="radio" checked="checked" name="radio">
+													  <span class="checkmark"></span>
+													</label>
+
+												</div>
+											</div>
+
+											
+
+											<div class="special-instructions margin_2em">
+												<div class="title">
+													
+													<p><i class="fas fa-clipboard"></i>Special Instructions</p>
+													
+												</div>
+												<textarea rows="4" cols="" placeholder="Example = allergenic foods, No pepper / sugar/ salt please.""></textarea>
+											</div>
+
+											<div class="quantity">
+												<div class="title">
+													
+													<p><i class="fas fa-calculator"></i>Quantity</p>
+													
+												</div>
+												<input type="number" name="quantity" min="1" max="">
+											</div>
+
+											<div class="button_form">
+
+												<p>
+													<a class="gold_button_color button_product" href="#">Add to cart</a> 
+													<!-- <input type="submit" value="Add to cart" class="gold_button_color button_product"> -->
+
+												</p>
+											</div>
+										</form>
+									</div>
+									<!-- <form action="" method="" >
+										<input type="number" name="quantity" min="1" max="5">
+									</form> -->
+								</div><!-- end of modal-content -->
+							</div><!-- end of bg-modal -->
+						</div>
+					</section>
+					<!-- end of popup section -->
+
+					<section class="section4"><!-- section for pop on click cart -->
+						<div class="container">
+							<div class="bg-modal-cart">
+								<div class="modal-content">
+									<div class="close_cart close_css">+</div>
+									<div class="popup_description_cart">
+										<h4>Cart</h4>
+										<div class="tab_content_popup box_form" id="popup">
+											<div class="img_left">
+												<img src="assets/images/1_chicken_menu.png" alt="CHICKEN SATAY">
+											</div>
+											<div class="content_center">
+												<p class="gold_bold">CHICKEN SATAY</p><p class="gold"> (SATAY GAI)</p>
+												<span>Heat:Medium</span>
+											</div>
+											
+										</div>
+									</div>
+									<div class="content_main">
+										<div class="button">
+											<div class="decrement">
+													<p>
+														<a class="gold_button_color" href="#">-</a>
+													</p>
+											</div>
+											<div class="quantity">
+												<p>1</p>
+											</div>
+											<div class="increment">
+												<p>
+													<a class="gold_button_color" href="#">+</a>
+												</p>
+											</div>
+										</div>
+										<div class="content_right">
+											<p>Total:$9.50</p>
+										</div>
+										<div class="cancle" >
+												<p>
+													<a class="gold_button_color" href="#">+</a>
+												</p>
+											</div>
+									</div>
+									<div class="button_form">
+										<p>
+											<a class="gold_button_color Submit_Order" href="#">Submit Order</a> 
+											<!-- <input type="submit" value="Submit Order" class="gold_button_color Submit_Order"> -->
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="section6">
+						<div class="container">
+							
+							<div class="bg-modal-order-reg">
+								<div class="modal-content">
+									<div class="close_order_reg close_css">+</div>
+									<div class="popup_description_cart">
+										<h4>Order Registration</h4>
+										<form>
+											<div class="payment margin_bottom_reg">
+												<div class="title">
+													<p>Method of Payment:</p>
+												</div>
+												<select>
+													<option value="EFTPOS" selected>EFTPOS </option>
+												  	<option value="cash">Cash</option>
+												</select>
+											</div>
+											<div class="option margin_bottom_reg" >
+												<div class="title">
+													<p>How would you like to collect your order?:</p>
+												</div>
+												<select id="mySelect" onchange="myFunction()">
+													<option value="Pick_Up" selected>Pick Up</option>
+													<option value="Delivery" >Delivery </option>
+												  	
+												</select>
+											</div>
+											<div class="address margin_bottom_reg">
+												<div class="title">
+													<p>Address:</p>
+												</div>
+												<textarea rows="4" cols="" placeholder="Address"></textarea>
+											</div>
+											
+											<div class="name margin_bottom_reg">
+												<div class="title">
+													<p>Name:</p>
+												</div>
+												<input type="text" name="name" placeholder="Name" >
+											</div>
+
+											<div class="contact margin_bottom_reg">
+												<div class="title">
+													<p>Contact:</p>
+												</div>
+												<input class="number" type="number" name="number" placeholder="Phone" >
+												<input type="email" name="emailaddress" placeholder="Email">
+											</div>
+
+											<div class="instruction margin_bottom_reg">
+												<div class="title">
+													<p>Your wishes:</p>
+												</div>
+												<textarea rows="4" cols="" placeholder="Special Instruction"></textarea>
+											</div>
+											<div class=" margin_bottom_reg">
+												<p>
+													<a class="gold_button_color button_form_reg" href="#">Submit</a> 
+													<!-- <input type="submit" value="Submit" class="gold_button_color button_form_reg"> -->
+												</p>
+											</div>
+											<div class="cost margin_bottom_reg" id="total_cost">
+												<p>Total Cost:$9.50</p>
+											</div>
+										</form>
+									</div>
+									
+								</div>
+							</div>			
+						</div>
+					</section>
+
+					<section class="section7">
+						<div class="container">
+							
+							<div class="bg-modal-order-payment">
+								<div class="modal-content">
+									<div class="close_order_payment close_css">+</div>
+									<div class="popup_description_payment">
+										<h4>Payment</h4>
+										<form>
+											<p class="gold_bold">Pay Now:$9.50</p>
+											<div class="name margin_bottom_reg">
+												<div class="title">
+													<p>Name on card:</p>
+												</div>
+												<input type="text" name="name" placeholder="Name" >
+											</div>
+
+											<div class="name margin_bottom_reg">
+												<div class="title">
+													<p>Card Number:</p>
+												</div>
+												<input type="text" name="name" placeholder="Card Number" >
+											</div>
+											<div class="name margin_bottom_reg">
+												<div class="title">
+													<p>Expiry date :</p>
+												</div>
+												<input type="text" name="name" placeholder="MM/YYYY" >
+											</div>
+											<div class="name margin_bottom_reg">
+												<div class="title">
+													<p>Validation code :</p>
+												</div>
+												<input type="text" name="name" placeholder="###" >
+											</div>
+											<div class="button_form_payment margin_bottom_reg">
+												<p>
+													<!-- <a class="gold_button_color" href="#">Submit</a> -->
+													<input type="submit" value="Process Payment" class="gold_button_color">
+												</p>
+											</div>
+										</form>
+									</div>
+									
+								</div>
+							</div>			
+						</div>
+					</section>
+				</main>
+
+				<footer>
+					<!--start section of  footer1 -->
+					<section class="section9 margin_top_section">
+						<div class="container margin_corner_section">
+							<div class="map_class">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102164.33121116586!2d174.74227426279217!3d-36.85120832134826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d482d765deebf%3A0x58684d5c8b68c1ec!2s8+Tamaki+Dr%2C+Orakei%2C+Auckland+1071!5e0!3m2!1sen!2snz!4v1555481348575!5m2!1sen!2snz" frameborder="0" style="border:0" allowfullscreen></iframe>
+							</div>
+							<div class="contact_description margin_top_section">
+								<div class="description1 margin_bottom_des">
+									<h3>ADDRESS</h3>
+									<hr class="hr_class">
+									<P>8 Tamaki Drive Mission Bay</P>
+									<p> 1001 Auckland </P>
+								</div>
+								<div class="description2 margin_bottom_des">
+									<h3>Opening Hours</h3>
+									<hr class="hr_class">
+									<P>Mon-Fri, Lunch: 10:00 AM - 2:00 PM </P>
+									<p>Mon-Fri, Dinner: 5:00 PM - 11:00 PM</p>
+								</div>
+								<div class="description3 margin_bottom_des">
+									<h3>Contact Info</h3>
+									<hr class="hr_class">
+									<div class="flex">
+										<P>Phone: </P><a href="tel:+64 123 456 78">+64 123 456 78 </a>
+									</div>
+									<div class="flex">
+										<p>Email:</p><a href="mailto:info@mythai.co.nz"> info@mythai.co.nz</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section><!--end section of footer1 -->
+
+					<section class="section10 "><!--section of footer2 -->
+						<div class="container margin_corner_section">
+							<a class="white_button_color" href="#top">
+								<i class="fas fa-arrow-up">To the top</i>
+							</a>
+							<div class="quick_link">
+								<a href="#">
+									<i class="fab fa-facebook-square"></i>
+								</a>
+								<a href="#">
+									<i class="fab fa-instagram"></i>
+								</a>
+								<a href="#">
+									<i class="fab fa-snapchat-square"></i>
+								</a>
+							</div>
+							<p>All Right Reserved © MyThai.  </p>
+						</div>
+					</section><!--end section of footer2 -->
+					
+				</footer>
+			</div>
+
+
+			<!-- jquery for navigation -->
+
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+			<script type="text/javascript">
+				$('.bars').on('click',function(){
+					// alert("hi");
+					$('.nav').slideToggle();
+				});
+
+
+
+			</script>
+			
+			<!-- for payment -->
+			<script type="text/javascript">
+					
+					//for increment
+					// function increment() 
+					// {
+ 				// 		 document.getElementById("quantity").stepUp();
+ 				// 		 alert("hi");
+					// }
+
+					// for total cost
+					function myFunction() 
+					{
+						 var nn = document.getElementById("mySelect").value;
+					
+
+						 if(nn == "Delivery")
+						 {
+						 	 var x = 9.50;
+							  var y= 5.00;
+							  z = x + y;
+							  document.getElementById("total_cost").innerHTML = "Cost delivery: $5.00 " + "<br>" +"Total Cost: " + "$" + z ;
+						 }
+						 if(nn =="Pick_Up")
+						 {
+						 	
+						 	var x = 9.50;
+						 	innerHTML = "Total Cost: "  + "$"+ x ;
+						 	document.getElementById("total_cost").innerHTML = innerHTML;
+						 }
+					 
+					}
+
+
+			</script>
+
+			<!-- for tab -->
+			<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+			<script src="assets/js/popup.js"></script><!-- for popup menu of item and cart -->
+			<script type="text/javascript">
+				// for tab
+				$(document).ready(function ()
+				 {
+					//alert("hi");
+
+						$(".tabContainer").on("click","li", function(){
+	  						//alert("The paragraph was clicked.");
+	  						var tabsId = $(this).attr("id");
+	  						//alert(tabsId);
+	  						//$(this).addClass("active").siblings().removeClass("active");
+	  						$(this).addClass('active').siblings().removeClass('active');
+	  						$("#" + tabsId + "-content").addClass('active').siblings().removeClass('active');
+						});
+
+						$('.decrement').on('click',function(){
+							var p = $(this).next().find('p');
+							var quantity = p.text();
+							quantity--;
+
+							if(quantity <0){
+								quantity = 0;
+							}
+							p.text(quantity);
+						})
+
+						$('.increment').on('click',function(){
+							var p = $(this).prev().find('p');
+							var quantity = p.text();
+							quantity++;
+							p.text(quantity);
+						})
+				})
+			</script>
+		</body>
+	</html>

@@ -1,0 +1,54 @@
+/*css for slider*/
+	
+.index
+{
+	.section2
+	{
+		background-image: url(../images/slider.jpg);
+		padding-top: 57%;
+		min-height: 10em;
+		position: relative;
+		background-size: cover;
+		background-repeat: no-repeat;
+
+		.container 
+		{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			width: 100%;
+			padding: 0 2em;
+			box-sizing: border-box;
+
+			h1 
+			{
+				@include color-gold();
+				text-align: center;
+				 /*font-family: "Indie Flower", cursive;*/
+				font-family: 'Aref Ruqaa', serif;
+				word-spacing: 0.3em;
+			}
+			p 
+			{
+				@include color-white();
+				/*font-size: $font-size;*/
+				text-align: center;
+				margin-bottom: 2em;
+			}
+		}
+	}
+}
+
+
+.about
+{
+	.section4
+	{
+		.container 
+		{
+			.mySlides 
+			{display:none;}
+		}
+	}
+}
